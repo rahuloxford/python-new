@@ -1,0 +1,166 @@
+PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django> pip install uv
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: uv in c:\users\admin\appdata\roaming\python\python313\site-packages (0.8.14)
+
+[notice] A new release of pip is available: 25.1.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django> uv venv
+Using CPython 3.13.3 interpreter at: C:\Program Files\Python313\python.exe
+Creating virtual environment at: .venv
+Activate with: .venv\Scripts\activate
+PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django> .venv\Scripts\activate
+(django) PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django> uv pip install django
+Resolved 4 packages in 351ms
+Prepared 1 package in 278ms
+Installed 4 packages in 4.38s
+ + asgiref==3.9.2
+ + django==5.2.6
+ + sqlparse==0.5.3
+ + tzdata==2025.2
+(django) PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django> django-admin
+
+Type 'django-admin help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    loaddata
+    makemigrations
+    migrate
+    optimizemigration
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    optimizemigration
+    runserver
+    sendtestemail
+    shell
+    showmigrations                                                                                                 STALLED_APPS, but settings 
+    sqlflush                                                                                                       re() before accessing setti
+    sqlmigrate
+    sqlsequencereset                                                                                               ebsite
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+    startapp
+    startproject
+    test
+    testserver
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting IN    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INNote that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODUSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).
+(django) PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django> django-admin startproject website
+(django) PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django> python manage.py runserver
+C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django\.venv/Scripts\python.exe: can't open file 'C:\\Users\\Admin\\Documents\\rahulsir\\python-morning-new\\python_advance\\django\\manage.py': [Errno 2] No such file or directory
+(django) PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django> cd .\website\
+(django) PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django\website> ls
+
+
+    Directory: C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django\website
+
+
+Mode                 LastWriteTime         Length Name
+d-----        25-09-2025     11:29                website                                                                                     
+-a----        25-09-2025     11:25            685 manage.py                                                                                   
+
+
+(django) PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django\website> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 25, 2025 - 11:30:50
+Django version 5.2.6, using settings 'website.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[25/Sep/2025 11:31:01] "GET / HTTP/1.1" 200 12068
+Not Found: /favicon.ico
+[25/Sep/2025 11:31:02] "GET /favicon.ico HTTP/1.1" 404 2209
+(django) PS C:\Users\Admin\Documents\rahulsir\python-morning-new\python_advance\django\website> python manage.py runserver 8005
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 25, 2025 - 11:33:15
+Django version 5.2.6, using settings 'website.settings'
+Starting development server at http://127.0.0.1:8005/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[25/Sep/2025 11:33:22] "GET / HTTP/1.1" 200 12068
+Not Found: /favicon.ico
+[25/Sep/2025 11:33:22] "GET /favicon.ico HTTP/1.1" 404 2209

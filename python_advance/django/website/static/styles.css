@@ -1,0 +1,10 @@
+body {
+  font-family: Arial;
+  background-color: lightblue;
+
+  padding: 0 32px;
+}
+
+h1 {
+  text-align: center;
+}
